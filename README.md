@@ -2,8 +2,9 @@
 
 A **fake** architect website for testing profile automation tools. This is not a real practice; all content is placeholder.
 
-- **Live site (GitHub Pages):** `https://<username>.github.io/test-architect-website/` — replace `<username>` with your GitHub username after enabling Pages.
+- **Live site (GitHub Pages):** [https://maxime-rainville.github.io/test-architect/](https://maxime-rainville.github.io/test-architect/)
 - **Branch:** Deploy from `master` (Settings → Pages → Source: Deploy from a branch → branch: `master`).
+- **Sitemap:** [sitemap.xml](https://maxime-rainville.github.io/test-architect/sitemap.xml)
 
 ## Structure
 

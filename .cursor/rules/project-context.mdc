@@ -6,7 +6,7 @@ alwaysApply: true
 # Dummy Architect Website — Project Context
 
 - **Purpose**: This is a fake architect website for testing a profile automation tool. Not a real practice. All content is placeholder.
-- **Hosting**: Static site for GitHub Pages (no server; deploy from `master`).
+- **Hosting**: Static site on GitHub Pages: `https://maxime-rainville.github.io/test-architect/` (deploy from `master`). Sitemap: `/sitemap.xml`.
 - **Structure**: Homepage (`index.html`), About (`about.html`), Team (`team.html`), Contact (`contact.html`), Projects (`projects/*.html`: residential-house-a, coastal-retreat, urban-loft, mountain-cabin, heritage-restoration, sustainable-pavilion).
 - **Disclaimer**: Every page must show the testing banner and footer disclaimer.
 - **Images**: Live under `assets/images/` (hero/, team/, projects/<slug>/, shared/). Some images are intentionally duplicated or reused across pages for automation testing.
