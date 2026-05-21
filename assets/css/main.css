@@ -236,6 +236,106 @@ a:hover {
   margin-top: 0.25rem;
 }
 
+.pull-quote {
+  margin: 0 0 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-text);
+  border-left: 3px solid #c9b896;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Project team on project pages */
+.project-team {
+  margin: 2rem 0;
+  padding-top: var(--spacing);
+  border-top: 1px solid #e5e5e5;
+}
+
+.project-team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--spacing);
+}
+
+.project-team-member {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: var(--spacing);
+}
+
+.project-team-member img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.project-team-member .name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.project-team-member .role {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* Plans, sketches, renders */
+.project-documents {
+  margin: 2rem 0;
+  padding-top: var(--spacing);
+  border-top: 1px solid #e5e5e5;
+}
+
+.project-documents h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-documents h3:first-of-type {
+  margin-top: 0;
+}
+
+.project-documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.project-documents-grid figure {
+  margin: 0;
+}
+
+.project-documents-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.project-documents-grid .ratio-16-9 { aspect-ratio: 16/9; }
+.project-documents-grid .ratio-4-3 { aspect-ratio: 4/3; }
+
+.project-documents-grid figcaption {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 0.35rem;
+}
+
 /* Awards */
 .awards-list {
   list-style: none;

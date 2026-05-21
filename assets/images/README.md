@@ -10,7 +10,8 @@ Add your generated images here. Create subfolders and use the filenames referenc
 - `projects/mountain-cabin/` — mountain-cabin-01.webp through 03
 - `projects/heritage-restoration/` — heritage-restoration-01.webp through 03
 - `projects/sustainable-pavilion/` — sustainable-pavilion-01.webp through 03
+- `projects/bow-tie-boutique/` — bow-tie-boutique-01 through 05, plan-01/02, sketch-01/02, render-01/02 (each as `.jpg` and `.webp`; source Gemini PNGs kept; see `IMAGE-PROMPTS.md` for mapping)
 
-See the plan for full image prompts. Until images are added, pages will show broken image placeholders.
+See `projects/bow-tie-boutique/IMAGE-PROMPTS.md` for full image prompts and Gemini PNG → basename mapping.
 
 To reconvert source images to WebP: `npx @yukioru/cwebp-cli -r assets/images`
