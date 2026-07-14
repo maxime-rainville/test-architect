@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-test-site="true">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rocket Launch HQ: futuristic mission control, hangars, and coastal launch pad. Placeholder project for CSS/JS background-image crawler testing. All content fictional.">
+  <title>Rocket Launch HQ — Test Architect</title>
+  <link rel="icon" href="../assets/images/logo.webp" type="image/webp">
+  <meta property="og:title" content="Rocket Launch HQ — Test Architect">
+  <meta property="og:description" content="Rocket Launch HQ: futuristic mission control, hangars, and coastal launch pad. Placeholder project for CSS/JS background-image crawler testing. All content fictional.">
+  <meta property="og:image" content="../assets/images/logo.webp">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rocket Launch HQ — Test Architect">
+  <meta name="twitter:description" content="Rocket Launch HQ: futuristic mission control, hangars, and coastal launch pad. Placeholder project for CSS/JS background-image crawler testing. All content fictional.">
+  <meta name="twitter:image" content="../assets/images/logo.webp">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/rocket-launch-hq.css">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="../sitemap.xml">
+  <!-- 08 — page <style> block with ID selector -->
+  <style id="rlh-page-style">
+    #rlh-shot-08 {
+      background-image: url("../assets/images/projects/rocket-launch-hq/rocket-launch-hq-08.webp");
+    }
+  </style>
+</head>
+<body>
+  <div class="test-banner">This is a fake website for testing only. Do not use for real enquiries.</div>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="../index.html" class="site-logo"><img src="../assets/images/logo.webp" alt="Test Architect"></a>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../team.html">Team</a>
+      <a href="index.html">Projects</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <h1>Rocket Launch HQ</h1>
+    <p><strong>Location:</strong> Fictional Coastal Range · <strong>Year:</strong> 2025</p>
+    <h2>Overview</h2>
+    <div class="page-intro">
+      <p>A purpose-built rocket launch headquarters on a fictional coastal range: mission control amphitheatre, vehicle assembly hangars, propellant farm, service towers, and a pad with flame trench and blast walls. The architecture is concrete and steel—austere, large-scale, and tuned for operations rather than spectacle.</p>
+      <p>Circulation separates public viewing galleries from secure bunkers and underground cable galleries. Rooftop antennas and telemetry rooms sit above the control volume; scrub lighting and floodlit aprons define the night character of the pad.</p>
+      <p>Placeholder project for testing. Gallery media is delivered only via CSS and JS background-image techniques (no gallery &lt;img&gt; / &lt;picture&gt;). All content and imagery are fictional.</p>
+    </div>
+
+    <div class="project-gallery">
+      <!-- 01: inline style background-image -->
+      <figure class="bg-shot" aria-label="Launch complex at dusk">
+        <div class="bg-shot-surface ratio-16-9" style="background-image: url('../assets/images/projects/rocket-launch-hq/rocket-launch-hq-01.webp');"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Launch complex at dusk</figcaption>
+      </figure>
+
+      <!-- 02: shared class in main.css -->
+      <figure class="bg-shot" aria-label="Mission control amphitheatre">
+        <div class="bg-shot-surface ratio-4-3 bg-shot-from-shared-css"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Mission control amphitheatre</figcaption>
+      </figure>
+
+      <!-- 03: page CSS class -->
+      <figure class="bg-shot" aria-label="Vehicle assembly hangar doors">
+        <div class="bg-shot-surface ratio-16-9 rlh-bg-03"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Vehicle assembly hangar doors</figcaption>
+      </figure>
+
+      <!-- 04: CSS custom property --bg + background-image: var(--bg) -->
+      <figure class="bg-shot" aria-label="Flame trench detail">
+        <div class="bg-shot-surface ratio-1-1" style="--bg: url('../assets/images/projects/rocket-launch-hq/rocket-launch-hq-04.webp'); background-image: var(--bg);"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Flame trench detail</figcaption>
+      </figure>
+
+      <!-- 05: background shorthand -->
+      <figure class="bg-shot" aria-label="Night service tower scrub lights">
+        <div class="bg-shot-surface ratio-16-9" style="background: center / cover no-repeat url('../assets/images/projects/rocket-launch-hq/rocket-launch-hq-05.webp');"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Night service tower scrub lights</figcaption>
+      </figure>
+
+      <!-- 06: ::before pseudo background on the figure -->
+      <figure class="bg-shot bg-shot-pseudo bg-shot-pseudo-before" aria-label="Bunker corridor">
+        <div class="bg-shot-surface ratio-portrait"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Bunker corridor</figcaption>
+      </figure>
+
+      <!-- 07: ::after pseudo background on the figure -->
+      <figure class="bg-shot bg-shot-pseudo bg-shot-pseudo-after" aria-label="Propellant farm tanks">
+        <div class="bg-shot-surface ratio-4-3"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Propellant farm tanks</figcaption>
+      </figure>
+
+      <!-- 08: page <style> block ID selector -->
+      <figure class="bg-shot" aria-label="Viewing gallery glazing">
+        <div id="rlh-shot-08" class="bg-shot-surface ratio-16-9"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Viewing gallery glazing</figcaption>
+      </figure>
+
+      <!-- 09: longhand stack class -->
+      <figure class="bg-shot" aria-label="Gantry steel joint">
+        <div class="bg-shot-surface ratio-1-1 rlh-bg-09-stack"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Gantry steel joint</figcaption>
+      </figure>
+
+      <!-- 10: gradient + image layered backgrounds -->
+      <figure class="bg-shot" aria-label="Payload integration bay">
+        <div class="bg-shot-surface ratio-4-3 rlh-bg-10-layered"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Payload integration bay</figcaption>
+      </figure>
+
+      <!-- 11: inline style on inner surface only (figure has no bg) -->
+      <figure class="bg-shot" aria-label="Rooftop antenna array">
+        <div class="bg-shot-surface ratio-16-9" style="background-image: url('../assets/images/projects/rocket-launch-hq/rocket-launch-hq-11.webp');"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Rooftop antenna array</figcaption>
+      </figure>
+
+      <!-- 12: dedicated external CSS class (different selector shape) -->
+      <figure class="bg-shot" aria-label="Concrete blast wall">
+        <div class="bg-shot-surface ratio-portrait rlh-ext-blast-wall"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Concrete blast wall</figcaption>
+      </figure>
+
+      <!-- 13: media-query-scoped background -->
+      <figure class="bg-shot" aria-label="Underground cable gallery">
+        <div class="bg-shot-surface ratio-4-3 rlh-bg-13-mq"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Underground cable gallery</figcaption>
+      </figure>
+
+      <!-- 14: background on wrapper .bg-shot-frame -->
+      <figure class="bg-shot" aria-label="Dawn launch tower silhouettes">
+        <div class="bg-shot-frame rlh-bg-14-frame">
+          <div class="bg-shot-surface ratio-16-9"></div>
+        </div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Dawn launch tower silhouettes</figcaption>
+      </figure>
+
+      <!-- 15: inline style with ./ relative path form -->
+      <figure class="bg-shot" aria-label="Empty briefing room">
+        <div class="bg-shot-surface ratio-4-3" style="background-image: url('./../assets/images/projects/rocket-launch-hq/rocket-launch-hq-15.webp');"></div>
+        <figcaption class="photo-credit">All photos: Morgan Vale — Empty briefing room</figcaption>
+      </figure>
+
+      <!-- 16–20: scroll-injected via assets/js/rocket-launch-hq.js (Loop 4); no URLs in HTML -->
+      <div id="rocket-dynamic-gallery" class="rocket-dynamic-gallery"></div>
+    </div>
+
+    <h2>Awards</h2>
+    <ul class="awards-list">
+      <li>Industrial Architecture Merit (Fake), 2025</li>
+      <li>Coastal Infrastructure Design (Fake), 2025</li>
+      <li>Technical Facilities Award (Fake), 2024</li>
+    </ul>
+
+    <section class="related-pictures">
+      <h2>Related pictures</h2>
+      <ul class="related-grid">
+        <li><a href="sustainable-pavilion.html"><img src="../assets/images/projects/sustainable-pavilion/sustainable-pavilion-01.webp" alt=""><span class="title">Sustainable Pavilion</span></a></li>
+        <li><a href="urban-loft.html"><img src="../assets/images/projects/urban-loft/urban-loft-01.webp" alt=""><span class="title">Urban Loft</span></a></li>
+        <li><a href="mountain-cabin.html"><img src="../assets/images/projects/mountain-cabin/mountain-cabin-01.webp" alt=""><span class="title">Mountain Cabin</span></a></li>
+        <li><a href="bow-tie-boutique.html"><img src="../assets/images/projects/bow-tie-boutique/bow-tie-boutique-01.webp" alt=""><span class="title">Cravat Atelier</span></a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Dummy Architect Site — Profile automation testing. Not a real practice.</p>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/rocket-launch-hq.js"></script>
+</body>
+</html>
