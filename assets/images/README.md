@@ -11,6 +11,7 @@ Add your generated images here. Create subfolders and use the filenames referenc
 - `projects/heritage-restoration/` — heritage-restoration-01.webp through 03
 - `projects/sustainable-pavilion/` — sustainable-pavilion-01.webp through 03
 - `projects/bow-tie-boutique/` — bow-tie-boutique-01 through 05, plan-01/02, sketch-01/02, render-01/02 (each as `.jpg` and `.webp`; source Gemini PNGs kept; see `IMAGE-PROMPTS.md` for mapping)
+- `projects/ai-startup-hq/` — low-res page gallery `ai-startup-hq-01.webp` through `05.webp`; high-res Dropbox-upload sources in `dropbox/` (`01`–`08`). HTML must not reference `dropbox/`; HQ stays under `assets/` so unlinked same-origin orphans remain discoverable. See `IMAGE-PROMPTS.md`.
 
 See `projects/bow-tie-boutique/IMAGE-PROMPTS.md` for full image prompts and Gemini PNG → basename mapping.
 
