@@ -35,7 +35,8 @@ assets/images/projects/ai-startup-hq/
   IMAGE-PROMPTS.md
   ai-startup-hq-01.webp … 05.webp   # LOW-RES — page gallery (<img src>)
   dropbox/
-    ai-startup-hq-01.webp … 08.webp # HIGH-RES — manual Dropbox upload only
+    ai-startup-hq-01.webp … 08.webp              # HIGH-RES — manual Dropbox upload only
+    ai-startup-hq-unsuitable-01.webp … 04.webp   # HIGH-RES — intentionally bad; Dropbox-only
 ```
 
 ### File mapping (canonical)
@@ -50,6 +51,10 @@ assets/images/projects/ai-startup-hq/
 | 6 | `ai-startup-hq-06` | 16:9 | No (Dropbox-only) | `dropbox/ai-startup-hq-06.webp` | — |
 | 7 | `ai-startup-hq-07` | 4:3 | No (Dropbox-only) | `dropbox/ai-startup-hq-07.webp` | — |
 | 8 | `ai-startup-hq-08` | 3:4 | No (Dropbox-only) | `dropbox/ai-startup-hq-08.webp` | — |
+| U1 | `ai-startup-hq-unsuitable-01` | 16:9-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-01.webp` | — |
+| U2 | `ai-startup-hq-unsuitable-02` | 16:9-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-02.webp` | — |
+| U3 | `ai-startup-hq-unsuitable-03` | 4:3-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-03.webp` | — |
+| U4 | `ai-startup-hq-unsuitable-04` | 4:3-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-04.webp` | — |
 
 ---
 
@@ -109,9 +114,43 @@ assets/images/projects/ai-startup-hq/
 
 ---
 
+## Intentionally unsuitable Dropbox-only photos
+
+These exercise automation that should reject portfolio-unsuitable content. Theme is still vaguely the same AI startup HQ site / construction, but clearly **bad** for portfolio use. **Must NOT appear on the project page** (not in the low-res gallery folder, not referenced from HTML). People are allowed in these shots (unlike the good gallery prompts).
+
+### ai-startup-hq-unsuitable-01.webp
+
+- **Defect:** Finger over lens
+- **Aspect ratio:** ~16:9 (landscape)
+- **On page:** No — Dropbox-only; must not appear on the project page
+- **Prompt:** Exterior of a modern tech-office / warehouse adaptive-reuse building, but a large out-of-focus finger/thumb obscures a big chunk of the frame in the foreground (classic photobomb finger). Poor composition. Still recognizable as a building photo gone wrong.
+
+### ai-startup-hq-unsuitable-02.webp
+
+- **Defect:** Camera shake / motion blur
+- **Aspect ratio:** ~16:9 (landscape)
+- **On page:** No — Dropbox-only; must not appear on the project page
+- **Prompt:** Same kind of building exterior or interior, but heavily motion-blurred as if the photographer moved during a long exposure. Soft, smeared, unusable.
+
+### ai-startup-hq-unsuitable-03.webp
+
+- **Defect:** Early demolition / construction
+- **Aspect ratio:** ~4:3 (landscape)
+- **On page:** No — Dropbox-only; must not appear on the project page
+- **Prompt:** Construction site at project start — a bulldozer demolishing or clearing a structure/debris on the site. Dust, rubble, incomplete — NOT a finished architectural portfolio shot.
+
+### ai-startup-hq-unsuitable-04.webp
+
+- **Defect:** Builders lunch in unfinished office
+- **Aspect ratio:** ~4:3 (landscape)
+- **On page:** No — Dropbox-only; must not appear on the project page
+- **Prompt:** Half-finished office interior (exposed framing, unfinished drywall, cables) with construction workers sitting/eating lunch. Messy, not polished architecture photography. People ARE allowed.
+
+---
+
 ## Export notes
 
-1. Generate all 8 images with Cursor (or your preferred tool) using the prompts above.
+1. Generate all 8 good images plus the 4 unsuitable images with Cursor (or your preferred tool) using the prompts above.
 2. Save high-res WebPs into `assets/images/projects/ai-startup-hq/dropbox/` with the **exact filenames** listed.
 3. Recommended HQ export sizes (~1920px long edge; adjust if your tool prefers other dimensions):
    - 16:9: ~1920×1080
@@ -119,5 +158,5 @@ assets/images/projects/ai-startup-hq/
    - 1:1: ~1200×1200
    - 3:4: ~1200×1600
 4. Convert to WebP if needed (ImageMagick or cwebp), quality ~85.
-5. Downsize **01–05 only** into `assets/images/projects/ai-startup-hq/ai-startup-hq-0N.webp` at ~480px long edge (or ~file size ballpark of `residential-house-a-01-thumbnail.webp` ~33KB). Leave 06–08 Dropbox-only.
-6. Page HTML `<img src>` must point only at the low-res page-folder paths — never `dropbox/`.
+5. Downsize **01–05 only** into `assets/images/projects/ai-startup-hq/ai-startup-hq-0N.webp` at ~480px long edge (or ~file size ballpark of `residential-house-a-01-thumbnail.webp` ~33KB). Leave 06–08 and all `unsuitable-*` Dropbox-only.
+6. Page HTML `<img src>` must point only at the low-res page-folder paths — never `dropbox/`, and never any `unsuitable-*` file.
