@@ -36,7 +36,7 @@ assets/images/projects/ai-startup-hq/
   ai-startup-hq-01.webp … 05.webp   # LOW-RES — page gallery (<img src>)
   dropbox/
     ai-startup-hq-01.webp … 08.webp              # HIGH-RES — manual Dropbox upload only
-    ai-startup-hq-unsuitable-01.webp … 04.webp   # HIGH-RES — intentionally bad; Dropbox-only
+    ai-startup-hq-unsuitable-01.webp … 06.webp   # HIGH-RES — intentionally bad; Dropbox-only
 ```
 
 ### File mapping (canonical)
@@ -55,6 +55,8 @@ assets/images/projects/ai-startup-hq/
 | U2 | `ai-startup-hq-unsuitable-02` | 16:9-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-02.webp` | — |
 | U3 | `ai-startup-hq-unsuitable-03` | 4:3-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-03.webp` | — |
 | U4 | `ai-startup-hq-unsuitable-04` | 4:3-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-04.webp` | — |
+| U5 | `ai-startup-hq-unsuitable-05` | 16:9-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-05.webp` | — |
+| U6 | `ai-startup-hq-unsuitable-06` | 16:9-ish | **No** (must not appear on page) | `dropbox/ai-startup-hq-unsuitable-06.webp` | — |
 
 ---
 
@@ -146,11 +148,25 @@ These exercise automation that should reject portfolio-unsuitable content. Theme
 - **On page:** No — Dropbox-only; must not appear on the project page
 - **Prompt:** Half-finished office interior (exposed framing, unfinished drywall, cables) with construction workers sitting/eating lunch. Messy, not polished architecture photography. People ARE allowed.
 
+### ai-startup-hq-unsuitable-05.webp
+
+- **Defect:** Mild–moderate overexposure (otherwise good architectural shot; recoverable in Photoshop)
+- **Aspect ratio:** ~16:9 (landscape)
+- **On page:** No — Dropbox-only; must not appear on the project page
+- **Prompt:** Strong architectural exterior (or bright atrium) of the same AI startup HQ — light timber, pale concrete, glass curtain wall — but mildly to moderately overexposed, like the photographer forgot to stop down one or two stops. Highlights a bit blown on glass/sky, whites clipped in places, overall washed — but building form and materials remain clearly readable. Bad enough not to publish as-is; good enough that a competent person could likely recover highlights in Photoshop. Not extreme / not completely blown white. No people, no readable logos.
+
+### ai-startup-hq-unsuitable-06.webp
+
+- **Defect:** Mild–moderate underexposure (otherwise good architectural shot; recoverable in Photoshop)
+- **Aspect ratio:** ~16:9 (landscape)
+- **On page:** No — Dropbox-only; must not appear on the project page
+- **Prompt:** Strong architectural interior collaboration floor (or dusk exterior) of the same AI startup HQ — light timber, pale concrete, glass — but mildly to moderately underexposed: too dark/muddy, heavy shadows — but the space and materials remain visible. Bad enough not to publish as-is; good enough that lifting exposure and shadows in Photoshop would likely fix it. Not extreme / not near-black mush. No people, no readable logos or UI text.
+
 ---
 
 ## Export notes
 
-1. Generate all 8 good images plus the 4 unsuitable images with Cursor (or your preferred tool) using the prompts above.
+1. Generate all 8 good images plus the 6 unsuitable images with Cursor (or your preferred tool) using the prompts above.
 2. Save high-res WebPs into `assets/images/projects/ai-startup-hq/dropbox/` with the **exact filenames** listed.
 3. Recommended HQ export sizes (~1920px long edge; adjust if your tool prefers other dimensions):
    - 16:9: ~1920×1080
