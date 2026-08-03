@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Ice hockey rink plan diagram">
+  <title>Ice hockey rink plan</title>
+  <desc>Top-down schematic: ice sheet A, lobby B, benches C, plant D. No branding.</desc>
+  <rect width="640" height="400" fill="#e8eef3"/>
+  <!-- Spectator bands (three sides) -->
+  <rect x="40" y="36" width="480" height="28" fill="#c5d0da"/>
+  <rect x="40" y="336" width="480" height="28" fill="#c5d0da"/>
+  <rect x="40" y="64" width="28" height="272" fill="#c5d0da"/>
+  <!-- Boards outline -->
+  <rect x="78" y="72" width="404" height="256" rx="48" ry="48" fill="#1a3a52" stroke="#0f2433" stroke-width="4"/>
+  <!-- Ice sheet A -->
+  <rect x="94" y="88" width="372" height="224" rx="40" ry="40" fill="#d9f0fa" stroke="#7eb8d4" stroke-width="2"/>
+  <ellipse cx="280" cy="200" rx="36" ry="36" fill="none" stroke="#8ec5de" stroke-width="2"/>
+  <line x1="280" y1="88" x2="280" y2="312" stroke="#8ec5de" stroke-width="2"/>
+  <!-- Player benches C (long sides) -->
+  <rect x="150" y="64" width="120" height="14" rx="2" fill="#b08968"/>
+  <rect x="300" y="64" width="120" height="14" rx="2" fill="#b08968"/>
+  <rect x="150" y="322" width="120" height="14" rx="2" fill="#b08968"/>
+  <rect x="300" y="322" width="120" height="14" rx="2" fill="#b08968"/>
+  <!-- Lobby block B (short end) -->
+  <rect x="500" y="120" width="100" height="160" rx="4" fill="#c4a574" stroke="#8a6a3e" stroke-width="2"/>
+  <!-- Plant D -->
+  <rect x="520" y="300" width="60" height="48" rx="3" fill="#8a9aa8" stroke="#5c6b78" stroke-width="2"/>
+  <!-- Labels A-D only -->
+  <text x="270" y="206" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#1a3a52">A</text>
+  <text x="538" y="208" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#3d2e1a">B</text>
+  <text x="200" y="58" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#3d2e1a">C</text>
+  <text x="540" y="332" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#2a3540">D</text>
+</svg>
