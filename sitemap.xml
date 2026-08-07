@@ -85,4 +85,10 @@
     <lastmod>2026-08-06</lastmod>
     <priority>0.6</priority>
   </url>
+  <!--
+    INTENTIONALLY OMITTED — do not add:
+    projects/superhero-theme-playground.html
+    Listed on the projects index only. This omission is a scraper/sitemap fixture;
+    adding a <url> entry here would break the test case.
+  -->
 </urlset>
