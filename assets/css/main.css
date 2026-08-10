@@ -495,7 +495,10 @@ a:hover {
 }
 
 .project-list a {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.65rem;
   padding: 1rem;
   background: #fff;
   border: 1px solid #e5e5e5;
@@ -508,4 +511,15 @@ a:hover {
 .project-list a:hover {
   border-color: var(--color-link);
   color: var(--color-link);
+}
+
+/* Quiet fixture labels on the projects index (not pill chips). */
+.project-tag {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.project-list a:hover .project-tag {
+  color: var(--color-muted);
 }

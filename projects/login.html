@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-test-site="true">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fake login page for HTTP login-wall automation testing. Form does not authenticate. Placeholder content only.">
+  <title>Login — Test Architect</title>
+  <link rel="icon" href="../assets/images/logo.webp" type="image/webp">
+  <meta property="og:title" content="Login — Test Architect">
+  <meta property="og:description" content="Fake login page for HTTP login-wall automation testing. Form does not authenticate. Placeholder content only.">
+  <meta property="og:image" content="../assets/images/logo.webp">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Login — Test Architect">
+  <meta name="twitter:description" content="Fake login page for HTTP login-wall automation testing. Form does not authenticate. Placeholder content only.">
+  <meta name="twitter:image" content="../assets/images/logo.webp">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="../sitemap.xml">
+  <style>
+    .login-form {
+      max-width: 22rem;
+      margin-top: 1.5rem;
+    }
+    .login-form label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 0.95rem;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem 0.65rem;
+      border: 1px solid #8a8478;
+      background: #faf8f5;
+      font: inherit;
+    }
+    .login-form button {
+      padding: 0.5rem 1.1rem;
+      border: 1px solid #3d3a34;
+      background: #3d3a34;
+      color: #faf8f5;
+      font: inherit;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background: #2a2824;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-banner">This is a fake website for testing only. Do not use for real enquiries.</div>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="../index.html" class="site-logo"><img src="../assets/images/logo.webp" alt="Test Architect"></a>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../team.html">Team</a>
+      <a href="index.html">Projects</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <h1>Login</h1>
+    <div class="page-intro">
+      <p>Fake login target for the HTTP login-wall fixture. This form does not authenticate anyone. Credentials are ignored. Used only for automation testing.</p>
+    </div>
+    <form class="login-form" action="#" method="get">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" autocomplete="username">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password">
+      <button type="submit">Sign in</button>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <p>Dummy Architect Site — Profile automation testing. Not a real practice.</p>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

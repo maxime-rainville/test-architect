@@ -1,0 +1,16 @@
+# HTTP status fixtures for local Apache testing.
+# Requires AllowOverride FileInfo AuthConfig (or All) on the vhost.
+# On GitHub Pages these rules are ignored and the stub HTML is served.
+
+<Files "http-403-forbidden.html">
+  Require all denied
+</Files>
+
+RewriteEngine On
+RewriteBase /projects/
+
+RewriteRule ^http-404-not-found\.html$ - [R=404,L]
+RewriteRule ^http-400-bad-request\.html$ - [R=400,L]
+RewriteRule ^http-429-rate-limited\.html$ - [R=429,L]
+RewriteRule ^http-500-error\.html$ - [R=500,L]
+RewriteRule ^http-login-wall\.html$ /projects/login.html [R=302,L]

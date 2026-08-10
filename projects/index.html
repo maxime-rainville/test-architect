@@ -32,8 +32,8 @@
   <main>
     <h1>Projects</h1>
     <div class="page-intro">
-      <p>Our portfolio is made up of placeholder projects for testing. Each project page includes multiple images, photo credits, fake awards, and links to related projects—so automation tools can exercise full parsing and linking behaviour.</p>
-      <p>Residential House A, Coastal Retreat, Urban Loft, Mountain Cabin, Heritage Restoration, Sustainable Pavilion, Cravat Atelier, Evil Project, Rocket Launch HQ, AI Startup HQ, Ice Hockey Rink, Ballet Girl Room Remodel, and Superhero Theme Playground are all fictional. None of this work is real.</p>
+      <p>Our portfolio is made up of placeholder projects for testing. Most project pages include multiple images, photo credits, fake awards, and links to related projects—so automation tools can exercise full parsing and linking behaviour. The HTTP status fixtures are stub pages only (no gallery); under Apache they return the matching status codes via <code>projects/.htaccess</code>.</p>
+      <p>Residential House A, Coastal Retreat, Urban Loft, Mountain Cabin, Heritage Restoration, Sustainable Pavilion, Cravat Atelier, Evil Project, Rocket Launch HQ, AI Startup HQ, Ice Hockey Rink, Ballet Girl Room Remodel, Superhero Theme Playground, and the HTTP status fixtures (403, 404, 400, 429, 500, login wall) are all fictional. None of this work is real.</p>
     </div>
     <h2>Selected projects</h2>
     <ul class="project-list">
@@ -43,13 +43,19 @@
       <li><a href="mountain-cabin.html">Mountain Cabin</a></li>
       <li><a href="heritage-restoration.html">Heritage Restoration</a></li>
       <li><a href="sustainable-pavilion.html">Sustainable Pavilion</a></li>
-      <li><a href="bow-tie-boutique.html">Cravat Atelier</a></li>
-      <li><a href="evil-project.html">Evil Project</a></li>
-      <li><a href="rocket-launch-hq.html">Rocket Launch HQ</a></li>
-      <li><a href="ai-startup-hq.html">AI Startup HQ</a></li>
-      <li><a href="ice-hockey-rink.html">Ice Hockey Rink</a></li>
-      <li><a href="ballet-girl-room-remodel.html">Ballet Girl Room Remodel</a></li>
-      <li><a href="superhero-theme-playground.html">Superhero Theme Playground</a></li>
+      <li><a href="bow-tie-boutique.html">Cravat Atelier <span class="project-tag">Plans &amp; diagrams</span></a></li>
+      <li><a href="evil-project.html">Evil Project <span class="project-tag">Prompt injection</span></a></li>
+      <li><a href="rocket-launch-hq.html">Rocket Launch HQ <span class="project-tag">CSS/JS background images</span></a></li>
+      <li><a href="ai-startup-hq.html">AI Startup HQ <span class="project-tag">Dual-folder / unsuitable orphans</span></a></li>
+      <li><a href="ice-hockey-rink.html">Ice Hockey Rink <span class="project-tag">Mixed image formats</span></a></li>
+      <li><a href="ballet-girl-room-remodel.html">Ballet Girl Room Remodel <span class="project-tag">Subheading</span></a></li>
+      <li><a href="superhero-theme-playground.html">Superhero Theme Playground <span class="project-tag">Image carousel</span></a></li>
+      <li><a href="http-403-forbidden.html">HTTP 403 Forbidden <span class="project-tag">HTTP 403</span></a></li>
+      <li><a href="http-404-not-found.html">HTTP 404 Not Found <span class="project-tag">HTTP 404</span></a></li>
+      <li><a href="http-400-bad-request.html">HTTP 400 Bad Request <span class="project-tag">HTTP 400</span></a></li>
+      <li><a href="http-429-rate-limited.html">HTTP 429 Rate Limited <span class="project-tag">HTTP 429</span></a></li>
+      <li><a href="http-500-error.html">HTTP 500 Error <span class="project-tag">HTTP 500</span></a></li>
+      <li><a href="http-login-wall.html">HTTP Login Wall <span class="project-tag">Login redirect</span></a></li>
     </ul>
   </main>
   <footer class="site-footer">

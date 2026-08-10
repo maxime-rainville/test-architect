@@ -85,10 +85,42 @@
     <lastmod>2026-08-06</lastmod>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/projects/http-403-forbidden.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/projects/http-404-not-found.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/projects/http-400-bad-request.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/projects/http-429-rate-limited.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/projects/http-500-error.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/projects/http-login-wall.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+  </url>
   <!--
     INTENTIONALLY OMITTED — do not add:
     projects/superhero-theme-playground.html
-    Listed on the projects index only. This omission is a scraper/sitemap fixture;
-    adding a <url> entry here would break the test case.
+    projects/login.html
+    Superhero is listed on the projects index only (scraper/sitemap fixture).
+    login.html is the login-wall redirect target only — not a portfolio project.
+    Adding either <url> entry here would break the test case.
   -->
 </urlset>
