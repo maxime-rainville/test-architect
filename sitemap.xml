@@ -115,6 +115,46 @@
     <lastmod>2026-08-11</lastmod>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/ai-powered-mirror.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/vanity-solar-panel.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/4d-tesseract-sculpture.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/articles/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/articles/postmodern-solar-panels.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/articles/lighthouse-house-renovation.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/articles/alex-morgan-award.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.6</priority>
+  </url>
   <!--
     INTENTIONALLY OMITTED — do not add:
     projects/superhero-theme-playground.html

@@ -8,9 +8,11 @@ A **fake** architect website for testing profile automation tools. This is not a
 
 ## Structure
 
-- Homepage, About, Team (3 members), Contact, and 7 project pages.
+- Homepage, About, Team (3 members), Contact, project pages, product pages, and articles.
 - Projects include mixed image sizes, photo credits (single-credit and per-image), awards, and a “Related pictures” section linking to other projects.
-- Add images generated from the prompts in the plan into `assets/images/` (hero/, team/, projects/<slug>/).
+- Products (`products/`) are surreal catalogue fixtures with visible SKU/price/category/availability, Schema.org Product JSON-LD, and galleries.
+- Articles (`articles/`) are long-form fixtures with interleaved figures; one links to a product page; one covers a fictional award for Alex Morgan.
+- Add images generated from prompts into `assets/images/` (hero/, team/, projects/<slug>/, products/<slug>/, articles/<slug>/).
 
 ## License
 

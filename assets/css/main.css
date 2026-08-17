@@ -523,3 +523,40 @@ a:hover {
 .project-list a:hover .project-tag {
   color: var(--color-muted);
 }
+
+/* Product detail metadata under h1 */
+.product-meta {
+  margin-top: -0.25em;
+  margin-bottom: 1.25em;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+/* Article byline and long-form body with interleaved figures */
+.article-byline {
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.article-body {
+  max-width: 65ch;
+}
+
+.article-body figure {
+  margin: 1.5em 0;
+}
+
+.article-body figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.article-body .ratio-16-9 { aspect-ratio: 16/9; }
+.article-body .ratio-4-3 { aspect-ratio: 4/3; }
+.article-body .ratio-1-1 { aspect-ratio: 1/1; }
+.article-body .ratio-portrait { aspect-ratio: 3/4; }
