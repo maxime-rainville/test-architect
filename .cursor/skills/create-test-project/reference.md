@@ -165,3 +165,4 @@ When the user asks for a non-majority behaviour, copy structure/behaviour from t
 | `<picture>` srcset, pull-quotes, team/documents blocks | `projects/bow-tie-boutique.html` |
 | Image carousel gallery (prev/next + dots) | `projects/superhero-theme-playground.html` + `assets/css/superhero-theme-playground.css` + `assets/js/superhero-theme-playground.js` |
 | Listed on projects index but omitted from sitemap | `projects/superhero-theme-playground.html` — add list link; do **not** add a `sitemap.xml` `<url>` |
+| Large gallery reusing existing images (no new assets) | `projects/all-in-one-exposition.html` — reuse unique published image paths; **no** dedicated folder; skip IMAGE-PROMPTS / images README; do not link `ai-startup-hq/dropbox/` |

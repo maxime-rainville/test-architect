@@ -86,6 +86,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://maxime-rainville.github.io/test-architect/projects/all-in-one-exposition.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://maxime-rainville.github.io/test-architect/projects/http-403-forbidden.html</loc>
     <lastmod>2026-08-11</lastmod>
     <priority>0.6</priority>
