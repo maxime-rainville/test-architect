@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Test Architect at our fake Wellington address. Phone, email, and location are placeholder data for testing only. Not a real practice.">
+  <meta name="description" content="Contact Test Architect at our fake Wellington and Auckland offices. Phone, email, and location are placeholder data for testing only. Not a real practice.">
   <title>Contact — Test Architect</title>
   <link rel="icon" href="assets/images/logo.webp" type="image/webp">
   <meta property="og:title" content="Contact — Test Architect">
-  <meta property="og:description" content="Contact Test Architect at our fake Wellington address. Phone, email, and location are placeholder data for testing only. Not a real practice.">
+  <meta property="og:description" content="Contact Test Architect at our fake Wellington and Auckland offices. Phone, email, and location are placeholder data for testing only. Not a real practice.">
   <meta property="og:image" content="assets/images/logo.webp">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contact — Test Architect">
-  <meta name="twitter:description" content="Contact Test Architect at our fake Wellington address. Phone, email, and location are placeholder data for testing only. Not a real practice.">
+  <meta name="twitter:description" content="Contact Test Architect at our fake Wellington and Auckland offices. Phone, email, and location are placeholder data for testing only. Not a real practice.">
   <meta name="twitter:image" content="assets/images/logo.webp">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
@@ -22,6 +22,7 @@
     "@type": "Organization",
     "name": "Test Architect",
     "url": "https://maxime-rainville.github.io/test-architect/",
+    "email": "test@example.com",
     "sameAs": [
       "https://x.com/testarchitect",
       "https://www.facebook.com/testarchitect",
@@ -30,6 +31,32 @@
       "https://www.instagram.com/testarchitect/",
       "https://www.youtube.com/@testarchitect",
       "https://www.tiktok.com/@testarchitect"
+    ],
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Wellington (head office)",
+        "telephone": "+64 4 123 4567",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Test Street",
+          "addressLocality": "Wellington",
+          "postalCode": "6011",
+          "addressCountry": "NZ"
+        }
+      },
+      {
+        "@type": "Place",
+        "name": "Auckland (secondary office)",
+        "telephone": "+64 9 123 8901",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "88 Test Lane",
+          "addressLocality": "Auckland",
+          "postalCode": "1010",
+          "addressCountry": "NZ"
+        }
+      }
     ]
   }
   </script>
@@ -55,15 +82,29 @@
       <p>This page exists so tools can reliably extract contact fields from architect profiles.</p>
     </div>
     <h2>Office details</h2>
-    <address class="contact-address">
-      <p><strong>Test Architect</strong></p>
-      <p>123 Test Street</p>
-      <p>Wellington 6011</p>
-      <p>New Zealand</p>
-      <p>Phone: +64 4 123 4567</p>
-      <p>Email: test@example.com</p>
-    </address>
-    <p><em>Map for testing only. This address is not real.</em></p>
+    <section class="office">
+      <h3>Wellington (head office)</h3>
+      <address class="contact-address">
+        <p><strong>Test Architect</strong></p>
+        <p>123 Test Street</p>
+        <p>Wellington 6011</p>
+        <p>New Zealand</p>
+        <p>Phone: +64 4 123 4567</p>
+        <p>Email: test@example.com</p>
+      </address>
+    </section>
+    <section class="office">
+      <h3>Auckland (secondary office)</h3>
+      <address class="contact-address">
+        <p><strong>Test Architect</strong></p>
+        <p>88 Test Lane</p>
+        <p>Auckland 1010</p>
+        <p>New Zealand</p>
+        <p>Phone: +64 9 123 8901</p>
+        <p>Email: test@example.com</p>
+      </address>
+    </section>
+    <p><em>Maps for testing only. These addresses are not real.</em></p>
     <h2>Social media</h2>
     <p>These profile URLs are fictional placeholders for testing. The accounts do not exist.</p>
     <ul class="social-list">

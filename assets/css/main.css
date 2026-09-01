@@ -444,6 +444,14 @@ a:hover {
 }
 
 /* Contact */
+.office {
+  margin-bottom: var(--spacing);
+}
+
+.office h3 {
+  margin-bottom: 0.5rem;
+}
+
 .contact-address {
   font-style: normal;
 }
