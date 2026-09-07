@@ -2,7 +2,7 @@
 
 Fictional house that bends space, time, and geometry. Visual language: impossible residential architecture, Möbius corridors, nested rooms, twilight that is both dawn and dusk, cool stone and warm timber. **No people, no readable logos or text** in generated images.
 
-This fixture exercises two scraper behaviours: the first gallery image is portrait so a landscape hero can be chosen instead, and later portraits sit in groups of 1, then 2, then 3, each separated by a landscape.
+This fixture exercises two scraper behaviours: the first gallery image is portrait so a landscape hero can be chosen instead, and later portraits sit in groups of 1, then 2, then 3, each separated by a landscape. Slots 11–20 repeat that mix after the first triple, ending on a landscape.
 
 ---
 
@@ -31,7 +31,7 @@ This fixture exercises two scraper behaviours: the first gallery image is portra
 
 ## Format map (canonical gallery filenames)
 
-Gallery order is the fixture: first portrait, then landscape, then a lone portrait, a portrait pair, and a portrait triple, with landscapes between groups.
+Gallery order is the fixture: first portrait, then landscape, then a lone portrait, a portrait pair, and a portrait triple, with landscapes between groups. Slots 11–20 add a second mix of the same grouping, ending on a landscape.
 
 | # | Filename | Format | Aspect | Role |
 |---|----------|--------|--------|------|
@@ -45,8 +45,18 @@ Gallery order is the fixture: first portrait, then landscape, then a lone portra
 | 08 | `transdimensional-home-08.webp` | WEBP | 3:4 | Triple, first |
 | 09 | `transdimensional-home-09.webp` | WEBP | 3:4 | Triple, second |
 | 10 | `transdimensional-home-10.webp` | WEBP | 3:4 | Triple, third |
+| 11 | `transdimensional-home-11.webp` | WEBP | 16:9 | Landscape separator |
+| 12 | `transdimensional-home-12.webp` | WEBP | 3:4 | Lone portrait |
+| 13 | `transdimensional-home-13.webp` | WEBP | 4:3 | Landscape separator |
+| 14 | `transdimensional-home-14.webp` | WEBP | 3:4 | Pair, first |
+| 15 | `transdimensional-home-15.webp` | WEBP | 3:4 | Pair, second |
+| 16 | `transdimensional-home-16.webp` | WEBP | 16:9 | Landscape separator |
+| 17 | `transdimensional-home-17.webp` | WEBP | 3:4 | Triple, first |
+| 18 | `transdimensional-home-18.webp` | WEBP | 3:4 | Triple, second |
+| 19 | `transdimensional-home-19.webp` | WEBP | 3:4 | Triple, third |
+| 20 | `transdimensional-home-20.webp` | WEBP | 4:3 | Closing landscape |
 
-Intermediate AI PNGs (working names) may live beside the shipped gallery files for reconvert; the HTML gallery must reference only the ten filenames above.
+Intermediate AI PNGs (working names) may live beside the shipped gallery files for reconvert; the HTML gallery must reference only the twenty filenames above.
 
 ---
 
@@ -112,6 +122,66 @@ Intermediate AI PNGs (working names) may live beside the shipped gallery files f
 - **Format:** WEBP
 - **Prompt:** Portrait orientation exterior photograph of a garden portal in a transdimensional house, a tall stone arch that frames another arch receding into folded garden space, climbing plants without flowers spelling words, twilight, empty of people, no readable signage or logos, cinematic architectural photography.
 
+### transdimensional-home-11.webp
+
+- **Aspect ratio:** 16:9 (landscape)
+- **Format:** WEBP
+- **Prompt:** Wide interior architectural photograph of a dining hall in a transdimensional house, two long timber tables sharing one vanishing point, stone walls, dusk through one window and dawn through the opposite, empty of people, no readable text or logos, cinematic architectural photography.
+
+### transdimensional-home-12.webp
+
+- **Aspect ratio:** 3:4 (portrait)
+- **Format:** WEBP
+- **Prompt:** Portrait orientation interior photograph of a vertical stone chimney shaft in a transdimensional home, a fireplace opening at an impossible mid-height, timber lintels, mixed warm firelight and cool daylight, empty of people, no readable markings or logos, architectural photography.
+
+### transdimensional-home-13.webp
+
+- **Aspect ratio:** 4:3 (landscape)
+- **Format:** WEBP
+- **Prompt:** Interior architectural photograph of a kitchen with mirrored geometry, two islands occupying the same floor, stone benches, timber cabinets, unbranded copper pans, mixed daylight, empty of people, no readable logos or text, professional residential interior photography.
+
+### transdimensional-home-14.webp
+
+- **Aspect ratio:** 3:4 (portrait)
+- **Format:** WEBP
+- **Prompt:** Portrait orientation interior photograph of a tall stone wet room in a transdimensional house, a simple basin as a prop only, a window looking into another version of the same room, vertical composition, soft mixed daylight, empty of people, no readable text or logos, architectural interior photography.
+
+### transdimensional-home-15.webp
+
+- **Aspect ratio:** 3:4 (portrait)
+- **Format:** WEBP
+- **Prompt:** Portrait orientation interior photograph of a stacked study alcove in a transdimensional home, empty timber shelves wrapping a vertical void, no books with readable titles, pale plaster, mixed daylight, empty of people, no logos, architectural interior photography.
+
+### transdimensional-home-16.webp
+
+- **Aspect ratio:** 16:9 (landscape)
+- **Format:** WEBP
+- **Prompt:** Wide dusk exterior architectural photograph of a transdimensional home from the opposite valley side, overlapping wings of the house folding around a second courtyard, glass and stone, empty of people, no readable signage or logos, cinematic landscape architectural photography.
+
+### transdimensional-home-17.webp
+
+- **Aspect ratio:** 3:4 (portrait)
+- **Format:** WEBP
+- **Prompt:** Portrait orientation architectural photograph of a descending cellar stair that also rises, stone vault, timber handrail, a ribbon of light from two directions, empty of people, no readable markings or logos, architectural photography.
+
+### transdimensional-home-18.webp
+
+- **Aspect ratio:** 3:4 (portrait)
+- **Format:** WEBP
+- **Prompt:** Portrait orientation architectural photograph looking up through a nested roof lantern in a transdimensional house, timber frame, stacked glass, sky at two times of day, empty of people, no readable text or logos, architectural photography.
+
+### transdimensional-home-19.webp
+
+- **Aspect ratio:** 3:4 (portrait)
+- **Format:** WEBP
+- **Prompt:** Portrait orientation interior photograph of a still-water pool shaft in a transdimensional home, pale stone walls, a vertical void of water reflecting a second ceiling, mixed daylight, empty of people, no readable logos or text, architectural interior photography.
+
+### transdimensional-home-20.webp
+
+- **Aspect ratio:** 4:3 (landscape)
+- **Format:** WEBP
+- **Prompt:** Interior-to-exterior architectural photograph of a terrace that looks both into the folded valley and back into the living room through a spatial fold, timber deck, stone parapet, dusk light, empty of people, no readable signage or logos, professional residential architectural photography.
+
 ---
 
 ## Export notes
@@ -123,7 +193,7 @@ Intermediate AI PNGs (working names) may live beside the shipped gallery files f
    - Gallery 16:9: ~1920×1080
    - Gallery 4:3: ~1600×1200
    - Gallery portrait 3:4: ~1200×1600
-5. Ship the ten gallery WebP files; intermediate PNGs optional for reconvert.
+5. Ship the twenty gallery WebP files; intermediate PNGs optional for reconvert.
 
 ---
 
@@ -141,3 +211,13 @@ Intermediate AI PNGs (working names) may live beside the shipped gallery files f
 | 08 | `transdimensional-home-08.webp` | AI PNG | `magick … webp` |
 | 09 | `transdimensional-home-09.webp` | AI PNG | `magick … webp` |
 | 10 | `transdimensional-home-10.webp` | AI PNG | `magick … webp` |
+| 11 | `transdimensional-home-11.webp` | AI PNG | `magick … webp` |
+| 12 | `transdimensional-home-12.webp` | AI PNG | `magick … webp` |
+| 13 | `transdimensional-home-13.webp` | AI PNG | `magick … webp` |
+| 14 | `transdimensional-home-14.webp` | AI PNG | `magick … webp` |
+| 15 | `transdimensional-home-15.webp` | AI PNG | `magick … webp` |
+| 16 | `transdimensional-home-16.webp` | AI PNG | `magick … webp` |
+| 17 | `transdimensional-home-17.webp` | AI PNG | `magick … webp` |
+| 18 | `transdimensional-home-18.webp` | AI PNG | `magick … webp` |
+| 19 | `transdimensional-home-19.webp` | AI PNG | `magick … webp` |
+| 20 | `transdimensional-home-20.webp` | AI PNG | `magick … webp` |
