@@ -15,6 +15,7 @@ Add your generated images here. Create subfolders and use the filenames referenc
 - `projects/ice-hockey-rink/` — mixed native formats: `ice-hockey-rink-01.jpg`, `02.gif` (animated), `03.png`, `04.webp`, `05.avif`, `06.tif`, `07.bmp`, `08.jp2`, `09.svg`. See `IMAGE-PROMPTS.md`.
 - `projects/ballet-girl-room-remodel/` — `ballet-girl-room-remodel-01.webp` through `06.webp` (ballet-focused girls' bedroom remodel; see `IMAGE-PROMPTS.md`).
 - `projects/superhero-theme-playground/` — `superhero-theme-playground-01.webp` through `06.webp` (carousel gallery fixture; listed on projects index but not in sitemap; see `IMAGE-PROMPTS.md`).
+- `projects/transdimensional-home/` — `transdimensional-home-01.webp` through `10.webp` (portrait-first gallery with 1/2/3 portrait groups separated by landscapes; see `IMAGE-PROMPTS.md`).
 - `products/ai-powered-mirror/` — `ai-powered-mirror-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `products/vanity-solar-panel/` — `vanity-solar-panel-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `products/4d-tesseract-sculpture/` — `4d-tesseract-sculpture-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
