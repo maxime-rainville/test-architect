@@ -151,19 +151,22 @@ Also extend the intro paragraph that names projects (second `.page-intro` `<p>`)
 
 ## Edge-case → fixture map
 
-When the user asks for a non-majority behaviour, copy structure/behaviour from the fixture — do not invent a new pattern.
+When the user asks for a non-majority behaviour, copy structure/behaviour from the fixture — do not invent a new pattern. A filled cell overrides that column; a blank cell keeps the majority default.
 
-| User condition | Follow fixture |
-|----------------|----------------|
-| No title (`h1` omitted or unusual) | Confirm intent; majority pages always have `h1`. If testing missing title, document in `project-context.mdc` and keep other chrome. |
-| Project subheading | `projects/ballet-girl-room-remodel.html` — `p.project-subheading` under `h1`; include `**Subheading (exact):**` in `IMAGE-PROMPTS.md` |
-| CSS/JS `background-image` gallery (no `<img>`) | `projects/rocket-launch-hq.html` + `assets/js/rocket-launch-hq.js` |
-| Unlinked high-res / unsuitable orphans + low-res page thumbs | `projects/ai-startup-hq.html` + `assets/images/projects/ai-startup-hq/dropbox/` (do not link dropbox/unsuitable shots from HTML) |
-| Mixed native image formats (jpg/gif/png/webp/avif/tif/bmp/jp2/svg) | `projects/ice-hockey-rink.html` |
-| Prompt-injection copy in Overview | `projects/evil-project.html` — reuse other projects’ image paths; **no** `assets/images/projects/<slug>/`, skip image generation / `IMAGE-PROMPTS.md` / images README gallery bullet |
-| Per-image photo credits (`Photo N: …`) | `projects/heritage-restoration.html`, `projects/sustainable-pavilion.html`, `projects/mountain-cabin.html` |
-| `<picture>` srcset, pull-quotes, team/documents blocks | `projects/bow-tie-boutique.html` |
-| Image carousel gallery (prev/next + dots) | `projects/superhero-theme-playground.html` + `assets/css/superhero-theme-playground.css` + `assets/js/superhero-theme-playground.js` |
-| Listed on projects index but omitted from sitemap | `projects/superhero-theme-playground.html` — add list link; do **not** add a `sitemap.xml` `<url>` |
-| Large gallery reusing existing images (no new assets) | `projects/all-in-one-exposition.html` — reuse unique published image paths; **no** dedicated folder; skip IMAGE-PROMPTS / images README; do not link `ai-startup-hq/dropbox/` |
-| Portrait-first gallery + 1/2/3 portrait groups + hyphen title suffix | `projects/transdimensional-home.html` — first image portrait; landscapes separate a lone portrait, a pair, and a triple (twice, twenty images); `<title>` is `… - Test Architect` (hyphen, not em dash) |
+| User condition | Artefact | Images | List | Sitemap | Docs |
+|----------------|----------|--------|------|---------|------|
+| No title (`h1` omitted or unusual) | Confirm intent first; majority pages always have `h1` | | | | If testing a missing title, note it in `project-context.mdc` and keep other chrome |
+| Project subheading | Clone `projects/ballet-girl-room-remodel.html` (`p.project-subheading` under `h1`) | Include `**Subheading (exact):**` in `IMAGE-PROMPTS.md` | | | |
+| CSS/JS `background-image` gallery (no `<img>`) | Clone `projects/rocket-launch-hq.html` + `assets/js/rocket-launch-hq.js` | No `<img>` gallery — do not run the WebP `<img>` pipeline | | | |
+| Unlinked high-res / unsuitable orphans + low-res page thumbs | Clone `projects/ai-startup-hq.html` | Keep `dropbox/` orphans; do not link dropbox/unsuitable shots from HTML | | | |
+| Mixed native image formats (jpg/gif/png/webp/avif/tif/bmp/jp2/svg) | Clone `projects/ice-hockey-rink.html` | Mixed native files under the slug folder | | | |
+| Prompt-injection copy in Overview | Clone `projects/evil-project.html` | Reuse other projects’ paths; **no** slug folder | | | Fixture bullet |
+| Per-image photo credits (`Photo N: …`) | Clone `projects/heritage-restoration.html`, `projects/sustainable-pavilion.html`, or `projects/mountain-cabin.html` | | | | |
+| `<picture>` srcset, pull-quotes, team/documents blocks | Clone `projects/bow-tie-boutique.html` | | | | |
+| Image carousel gallery (prev/next + dots) | Clone `projects/superhero-theme-playground.html` + page CSS/JS | | | | |
+| Listed on projects index but omitted from sitemap | Clone `projects/superhero-theme-playground.html` | | | Omit `<url>` | |
+| Large gallery reusing existing images (no new assets) | Clone `projects/all-in-one-exposition.html` | Reuse unique published paths; **no** dedicated folder; do not link `ai-startup-hq/dropbox/` | | | Fixture bullet |
+| Portrait-first gallery + 1/2/3 portrait groups + hyphen title suffix | Clone `projects/transdimensional-home.html`; `<title>` is `… - Test Architect` (hyphen, not em dash) | Twenty WebPs in the fixture’s portrait/landscape groups | | | |
+| Listed project that is a PDF (no HTML twin) | `projects/paper-pavilion.pdf` only — print from throwaway Chrome `--print-to-pdf` HTML kept outside `projects/` | Reuse published photos (not `ai-startup-hq/dropbox/`); no slug folder | `href` is the `.pdf` with tag `PDF`; name in intro | Full GitHub Pages PDF `loc` at `0.6` | Fixture bullet |
+
+Add a Structure `projects/*.html` slug only when the artefact is an HTML page.

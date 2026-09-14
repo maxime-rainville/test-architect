@@ -56,22 +56,22 @@ Collect:
 
 - **Theme** (required): subject, mood, fictional location/year hints
 - **Slug**: kebab-case from title (e.g. `urban-loft`)
-- **Edge case** (optional): if set, **override** majority defaults and steps 3–5 — clone the mapped fixture in [reference.md](reference.md) instead of the normal shell
+- **Edge case** (optional): if set, follow the mapped [reference.md](reference.md) row for artefact, images, list, sitemap, and docs. The six steps still run.
 
 ### 2. Copy + image placeholders
 
-Draft before generating images (skip image slots when the chosen fixture reuses other projects’ assets, e.g. evil-project):
+Draft the copy the artefact needs. For an HTML page:
 
 - Title, location, year, overview (2 short paragraphs; end with fictional/testing note)
 - Awards (2), related project picks (2–4)
 - Per-slot placeholder notes: subject, aspect (16:9 / 4:3 / 1:1 / 3:4), matching `ratio-*` class, alt text
 - Photo credit name (fake)
 
-Canonical **normal** shells: `projects/urban-loft.html`, `projects/coastal-retreat.html`. Edge cases: use the fixture path from [reference.md](reference.md).
+Canonical **normal** shells: `projects/urban-loft.html`, `projects/coastal-retreat.html`.
 
 ### 3. IMAGE-PROMPTS.md
 
-**Normal path:** write `assets/images/projects/<slug>/IMAGE-PROMPTS.md` before generating:
+Write `assets/images/projects/<slug>/IMAGE-PROMPTS.md` before generating:
 
 - Page copy block (title, optional subheading, location, year, credit, overview, awards, related)
 - Format map + one section per file: aspect, filename `<slug>-01.webp` … (zero-padded two-digit index), full prompt
@@ -79,44 +79,29 @@ Canonical **normal** shells: `projects/urban-loft.html`, `projects/coastal-retre
 
 Pattern: `assets/images/projects/ballet-girl-room-remodel/IMAGE-PROMPTS.md`. Outline: [reference.md](reference.md).
 
-**Edge-case path:** only if the fixture uses a dedicated asset folder and prompt file; skip when reusing images (evil-project) or when the fixture’s own docs differ — match the fixture.
-
 ### 4. Generate + convert images
-
-**Normal path:**
 
 1. Generate stills (GenerateImage / agent) matching each prompt and aspect
 2. Convert to WebP with `magick` into `assets/images/projects/<slug>/`
 3. HTML gallery must reference only the shipped `<slug>-01.webp` … files
 
-**Edge-case path:** follow the fixture (mixed formats, background-image slots, dropbox orphans, or no new images).
-
 ### 5. HTML page
 
-**Normal path:** copy `urban-loft.html` or `coastal-retreat.html`, then replace title, meta, overview, gallery, awards, and related links. Keep head/nav/banner/footer chrome and relative paths. Skeleton: [reference.md](reference.md).
-
-**Edge-case path:** copy the mapped fixture page and adapt theme copy; preserve that fixture’s gallery/credit/DOM techniques.
+Copy `urban-loft.html` or `coastal-retreat.html`, then replace title, meta, overview, gallery, awards, and related links. Keep head/nav/banner/footer chrome and relative paths. Skeleton: [reference.md](reference.md).
 
 ### 6. Wire list + sitemap + docs
 
-Always:
-
 - `projects/index.html`: add `<li><a href="<slug>.html">Title</a></li>`; update intro prose if it enumerates projects
 - `sitemap.xml`: full `<url>` entry — `loc` `https://maxime-rainville.github.io/test-architect/projects/<slug>.html`, `<lastmod>` (ISO date), `<priority>0.6</priority>`
-- `.cursor/rules/project-context.mdc`: add the slug to the Structure `projects/*.html` list
-
-When there is a dedicated gallery folder:
-
-- `assets/images/README.md`: add a `projects/<slug>/` bullet
-
-When the project is a **special fixture**, also add a fixture bullet in `project-context.mdc` (see [reference.md](reference.md)). Skip the images README bullet when there is no `assets/images/projects/<slug>/` folder.
+- `.cursor/rules/project-context.mdc`: add a Structure `projects/*.html` slug when the artefact is an HTML page
+- `assets/images/README.md`: add a `projects/<slug>/` bullet when there is a dedicated gallery folder
 
 Do **not** add a homepage featured card unless asked.
 
 ## Done when
 
-- [ ] Page loads with banner + footer; gallery matches the chosen path (normal WebPs or edge-case fixture behaviour)
-- [ ] Listed on projects index; in sitemap at 0.6 with full loc + lastmod
-- [ ] Structure list updated; images README updated only if a slug asset folder exists
+- [ ] Page or mapped artefact loads; HTML pages have banner + footer; gallery matches the chosen path
+- [ ] Listed on projects index; sitemap follows the resolved row (default HTML `loc` at 0.6)
+- [ ] Images README updated only if a slug asset folder exists
 - [ ] `IMAGE-PROMPTS.md` present when the path generated dedicated images
-- [ ] Defaults or documented edge-case overrides applied
+- [ ] Majority defaults or documented row overrides applied
