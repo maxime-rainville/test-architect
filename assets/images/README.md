@@ -19,6 +19,9 @@ Add your generated images here. Create subfolders and use the filenames referenc
 - `products/ai-powered-mirror/` — `ai-powered-mirror-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `products/vanity-solar-panel/` — `vanity-solar-panel-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `products/4d-tesseract-sculpture/` — `4d-tesseract-sculpture-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
+- `products/puzzle-cube-sculpture/` — `puzzle-cube-sculpture-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
+- `products/model-rocket/` — `model-rocket-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
+- `products/unliftable-thor-hammer/` — `unliftable-thor-hammer-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `articles/postmodern-solar-panels/` — `postmodern-solar-panels-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `articles/lighthouse-house-renovation/` — `lighthouse-house-renovation-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `articles/alex-morgan-award/` — `alex-morgan-award-01.webp` through `04.webp` (award-show + fictional project stills; see `IMAGE-PROMPTS.md`).

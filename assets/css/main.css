@@ -628,6 +628,49 @@ a:hover {
   color: var(--color-muted);
 }
 
+/* Explicit SKU/price rows for colour (or similar) product variants */
+.product-variants {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 0 1.5em;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.product-variants caption {
+  text-align: left;
+  margin-bottom: 0.5em;
+  color: var(--color-muted);
+}
+
+.product-variants th,
+.product-variants td {
+  padding: 0.45em 0.75em 0.45em 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.product-variants th {
+  font-weight: 600;
+}
+
+/* Two independent option axes; not a combination matrix */
+.product-option-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0 2rem;
+  margin: 0 0 1.5em;
+}
+
+.product-option-lists h2 {
+  margin-top: 0;
+}
+
+.product-option-lists ul {
+  margin: 0.25em 0 0;
+  padding-left: 1.2em;
+}
+
 /* Article byline and long-form body with interleaved figures */
 .article-byline {
   margin-top: -0.5em;

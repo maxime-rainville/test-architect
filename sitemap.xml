@@ -151,6 +151,21 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/puzzle-cube-sculpture.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/model-rocket.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/unliftable-thor-hammer.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://maxime-rainville.github.io/test-architect/articles/</loc>
     <lastmod>2026-08-18</lastmod>
     <priority>0.8</priority>
