@@ -132,7 +132,7 @@
   </url>
   <url>
     <loc>https://maxime-rainville.github.io/test-architect/products/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -163,6 +163,11 @@
   <url>
     <loc>https://maxime-rainville.github.io/test-architect/products/unliftable-thor-hammer.html</loc>
     <lastmod>2026-09-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://maxime-rainville.github.io/test-architect/products/invisible-sculpture.html</loc>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.6</priority>
   </url>
   <url>

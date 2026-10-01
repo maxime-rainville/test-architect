@@ -22,6 +22,7 @@ Add your generated images here. Create subfolders and use the filenames referenc
 - `products/puzzle-cube-sculpture/` — `puzzle-cube-sculpture-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `products/model-rocket/` — `model-rocket-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `products/unliftable-thor-hammer/` — `unliftable-thor-hammer-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
+- `products/invisible-sculpture/` — `invisible-sculpture-01.webp` through `04.webp` (ink line diagrams of an empty floor square and a certificate; no product photographs; see `IMAGE-PROMPTS.md`).
 - `articles/postmodern-solar-panels/` — `postmodern-solar-panels-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `articles/lighthouse-house-renovation/` — `lighthouse-house-renovation-01.webp` through `04.webp` (see `IMAGE-PROMPTS.md`).
 - `articles/alex-morgan-award/` — `alex-morgan-award-01.webp` through `04.webp` (award-show + fictional project stills; see `IMAGE-PROMPTS.md`).
