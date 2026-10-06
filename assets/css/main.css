@@ -628,6 +628,30 @@ a:hover {
   color: var(--color-muted);
 }
 
+/* Labelled catalogue scalars for setup-product extract fixtures */
+.catalogue-details {
+  max-width: 40rem;
+  margin: 0 0 1.5em;
+  font-size: 0.95rem;
+}
+
+.catalogue-details > div {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.35em 1rem;
+  padding: 0.4em 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalogue-details dt {
+  margin: 0;
+  font-weight: 600;
+}
+
+.catalogue-details dd {
+  margin: 0;
+}
+
 /* Explicit SKU/price rows for colour (or similar) product variants */
 .product-variants {
   width: 100%;
